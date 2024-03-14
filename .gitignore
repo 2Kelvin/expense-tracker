@@ -1,1 +1,3 @@
 node_modules
+# shouldn't expose env variables
+.env
