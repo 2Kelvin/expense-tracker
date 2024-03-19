@@ -4,7 +4,7 @@ import { users } from "../dummyData/data.js";
 const userResolver = {
   Query: {
     // resolver function to query and get all users
-    users: () => {
+    users: (_, _, { req, res }) => {
       return users;
     },
 
